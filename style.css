@@ -1,7 +1,7 @@
 :root{
     --c1:#FEF3E2;
     --c2:#F4AE52;
-    --c3:#94653637; filter:blur=(10px);
+    --c3:#94653637; filter:;
     --c4: linear-gradient(180deg, #424a24, #000);
     --c5: linear-gradient(0deg, #424a24, #000);
 }
@@ -18,6 +18,7 @@
     transition: transform 0.5s ease;
     transition: filter 0.4s ease-in-out;
     transition: all 0.6s;
+    scroll-behavior: smooth;
 
 }
 main{
@@ -42,6 +43,7 @@ main{
     text-align: center;
     border-radius: 50PX;
     box-shadow: #000 0px 30px 100px;
+    border-left: var();
 }
 .heroLVL1 h2{
     font-family: arial;
@@ -112,9 +114,7 @@ main{
     font-family: f2;
     margin-top: 0px;
 }
-.heroLVL1 {
-    border-left: #FEF3E2 1px solid;
-}
+
 .kvalifickacia{
     background: var(--c4);
     padding: 2%;
@@ -177,3 +177,70 @@ main{
 .price h2, p{
     text-align: center;
 }
+.contacts{
+    background: var(--c4);
+    padding: 10% 2%;
+    text-align: center;
+    color: var(--c1);
+    font-family: f1;
+}
+.contacts a{
+    background: var(--c3);
+    border-radius: 10px;
+    color: var(--c1);
+    text-decoration: none;
+    padding: 1%;
+}
+.contacts a:hover{
+    background: #93571a;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    font-family: f1;
+    background-color: #000;
+    padding: 2% 0%;
+    text-align: center;
+    color: var(--c1);
+    border-top: var(--c1) 1px solid;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+footer a{
+
+    max-width: 100px;
+    margin: 0px;
+    background: var(--c3);
+    border-radius: 10px;
+    color: var(--c1);
+    text-decoration: none;
+    padding: 1%;
+}
+footer a:hover{
+    background: #93571a;
+}
+header{
+    position: fixed;
+    background: var(--c3);
+    display: flex;
+    width: 100%;
+    padding: 1% 0%;
+    justify-content: center;
+    gap: 20px;
+    font-family: f1;
+    backdrop-filter:blur(10px);
+    border-bottom: #FEF3E2 0.1px solid;
+    margin-top: 0px;
+}
+header a{
+    text-decoration: none;
+    color: var(--c1);
+
+
+}
+header a:hover{
+    color: #ff870f;
+}
+.hero
